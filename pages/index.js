@@ -4,9 +4,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>OrganizeU</title>
+        <title>HYS - Dashboard</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
       <div className="h-screen bg-gray-200 flex flex-col items-center justify-start pt-8">
         <h1>Dashboard</h1>
