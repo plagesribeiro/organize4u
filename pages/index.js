@@ -11,6 +11,7 @@ export default function Home() {
       <div className="h-screen bg-gray-200 flex flex-col items-center justify-start pt-8">
         <h1>Dashboard</h1>
         <h2>Esse é meu dashboard</h2>
+        <h2>Vamos que Vamos</h2>
       </div>
     </div>
   );
