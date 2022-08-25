@@ -1,0 +1,42 @@
+@import './styles/globals/color';
+@import './styles/globals/font';
+
+.hidden {
+	visibility: hidden;
+}
+
+body,
+html {
+	margin: 0;
+}
+
+body,
+span,
+button,
+input,
+textarea {
+	font-family: $font-family;
+}
+
+a {
+	text-decoration: none;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	background-color: rgba(44, 44, 44, 0);
+	border-radius: 100px;
+}
+
+::-webkit-scrollbar:hover {
+	background-color: rgba(0, 0, 0, 0.09);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	background: rgba(156, 156, 156, 0.5);
+	border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+	background: rgba(65, 65, 65, 0.61);
+}

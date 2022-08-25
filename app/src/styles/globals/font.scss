@@ -1,0 +1,42 @@
+@mixin register-font-size($name, $value) {
+	.fs-#{$name} {
+		font-size: $value;
+	}
+}
+
+@mixin register-font-weight($name, $value) {
+	.fw-#{$name} {
+		font-weight: $value;
+	}
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('/Inter.woff2') format('woff2');
+}
+
+$font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans',
+	'Droid Sans', 'Helvetica Neue', sans-serif;
+
+@include register-font-size('40', 2.5rem);
+@include register-font-size('32', 2rem);
+@include register-font-size('24', 1.5rem);
+@include register-font-size('20', 1.25rem);
+@include register-font-size('16', 1rem);
+@include register-font-size('14', 0.875rem);
+@include register-font-size('12', 0.75rem);
+@include register-font-size('10', 0.625rem);
+
+@include register-font-weight('100', 100);
+@include register-font-weight('200', 200);
+@include register-font-weight('300', 300);
+@include register-font-weight('400', 400);
+@include register-font-weight('500', 500);
+@include register-font-weight('600', 600);
+@include register-font-weight('700', 700);
+@include register-font-weight('800', 800);
+@include register-font-weight('900', 900);
+
+:root {
+	font-size: 16px;
+}

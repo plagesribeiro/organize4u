@@ -1,0 +1,28 @@
+{
+	"name": "helpyourstore-app",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"postinstall": "patch-package"
+	},
+	"type": "module",
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "1.0.0-next.405",
+		"sass": "1.49.9",
+		"svelte": "3.47.0",
+		"tslib": "2.3.1",
+		"typescript": "4.5.5",
+		"vite": "3.0.4"
+	},
+	"dependencies": {
+		"firebase": "9.9.3",
+		"patch-package": "6.4.7",
+		"svelte-local-storage-store": "0.2.6",
+		"svelte-material-icons": "2.0.4",
+		"svelte-preprocess": "4.10.7"
+	}
+}

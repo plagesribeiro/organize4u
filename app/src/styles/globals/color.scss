@@ -1,0 +1,42 @@
+@mixin register-color($name, $value) {
+	.c-#{$name} {
+		color: $value;
+	}
+
+	.c-hover-#{$name}:hover {
+		color: darken($value, 7%);
+	}
+
+	.bc-#{$name} {
+		border-color: $value  !important;
+	}
+
+	.bg-#{$name} {
+		background-color: $value;
+	}
+
+	.bg-hover-#{$name}:hover {
+		background-color: darken($value, 7%);
+	}
+}
+
+.dark-mode {
+	@include register-color('background', #37474f);
+	@include register-color('primary', #3277b3);
+	@include register-color('secondary', #808A9F);
+
+	@include register-color('text', #d3d6d8);
+	@include register-color('light-text', #6f818e);
+}
+
+.light-mode {
+	@include register-color('background', #dde4e7);
+	@include register-color('primary', #3277b3);
+	@include register-color('secondary', #b0b4ba);
+
+	@include register-color('text', #313234);
+	@include register-color('light-text', #7b8087);
+}
+
+@include register-color('white', #FFFF);
+@include register-color('black', #000000);
